@@ -12,7 +12,7 @@ const dateInput = document.querySelector('.datetime-picker');
 
 startButton.addEventListener('click', function () {
   const selectedDate = flatpickrInstance.selectedDates[0];
-  const currentDate = new Date();
+  const currentDate = Date.now(); // Using Date.now() instead of new Date()
   if (!selectedDate || selectedDate <= currentDate) {
     iziToast.error({
       title: 'Error',
@@ -20,7 +20,7 @@ startButton.addEventListener('click', function () {
     });
     return;
   }
-  const msUntilSelectedDate = selectedDate.getTime() - currentDate.getTime();
+  const msUntilSelectedDate = selectedDate.getTime() - currentDate;
   const { days, hours, minutes, seconds } = convertMs(msUntilSelectedDate);
   updateTimer(days, hours, minutes, seconds);
   startCountdown(msUntilSelectedDate);

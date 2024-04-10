@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.svg#tab-icon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <title>task 2</title>
+</head>
+
+<body>
+    <div class="go-back-wrapper">
+        <a class="go-back" href="./index.html">Go back</a>
+    </div>
+
+    <div class="form-snack-wrapper">
+        <div class="snackbar-wrapper">
+            <form class="form">
+                <div class="input-wrapper">
+                    <label>
+                        Delay (ms)
+                        <input class="input-delay" type="number" name="delay" placeholder="value" required />
+                    </label>
+                </div>
+                <div class="input-wrapper">
+                    <fieldset>
+                        <legend>State</legend>
+                        <label>
+                            <input type="radio" name="state" value="fulfilled" required />
+                            Fulfilled
+                        </label>
+                        <label>
+                            <input type="radio" name="state" value="rejected" required />
+                            Rejected
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="input-wrapper">
+                    <button class="button-create" type="submit">Create notification</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+
+</html>
