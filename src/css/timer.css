@@ -1,0 +1,145 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px;
+}
+
+.timer-wrapper {
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  gap: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-date-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.datetime-picker {
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  padding: 8px 16px;
+  box-sizing: border-box;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.datetime-picker:hover {
+  border-color: black;
+}
+
+.button-start {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  max-width: 95px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-start:hover {
+  background: #6c8cff;
+}
+
+.btn-disabled {
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: grey;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-disabled:hover {
+  background: grey;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #f6f6fe;
+  border-radius: 8px;
+
+  padding: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.label-type {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.value-type {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+@media (max-width: 520px) {
+  .label-type {
+    font-size: 16px;
+  }
+
+  .value-type {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .timer {
+    flex-direction: column;
+  }
+
+  .datetime-picker {
+    font-size: 14px;
+  }
+
+  .input-date-wrapper {
+    padding: 4px;
+  }
+}

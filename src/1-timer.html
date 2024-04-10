@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.svg#tab-icon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <title>task 1</title>
+</head>
+
+<body>
+    <div class="go-back-wrapper">
+        <a class="go-back" href="./index.html">Go back</a>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="timer-wrapper">
+            <div class="input-date-wrapper">
+                <input type="text" id="datetime-picker" class="datetime-picker" placeholder="set data" />
+                <button class="button-start" type="button" data-start>Start</button>
+            </div>
+            <div class="timer">
+                <div class="field">
+                    <span class="value value-type" data-days>00</span>
+                    <span class="label label-type">Days</span>
+                </div>
+                <div class="field">
+                    <span class="value value-type" data-hours>00</span>
+                    <span class="label label-type">Hours</span>
+                </div>
+                <div class="field">
+                    <span class="value value-type" data-minutes>00</span>
+                    <span class="label label-type">Minutes</span>
+                </div>
+                <div class="field">
+                    <span class="value value-type" data-seconds>00</span>
+                    <span class="label label-type">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/1-timer.js"></script>
+</body>
+
+</html>
