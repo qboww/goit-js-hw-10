@@ -1,14 +1,13 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+iziToast.settings({ position: 'topRight' });
+
 document.querySelector('.form').addEventListener('submit', function (event) {
   event.preventDefault();
 
   const delay = parseInt(this.elements.delay.value);
-
   const state = this.elements.state.value;
-
-  iziToast.settings({ position: 'topRight' });
 
   const notificationPromise = new Promise((resolve, reject) => {
     if (state === 'fulfilled') {
